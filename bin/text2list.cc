@@ -2,13 +2,13 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-#include "./lib/WordAggregator.h"
-#include "./lib/Exceptions.h"
+#include "../lib/WordAggregator.h"
+#include "../lib/Exceptions.h"
 
-#define IN_FILE     "text.txt"
-#define OUT_FILE    "result.txt"
-#define SEPAR_FILE  "./etc/separators.conf"
-#define EXCEP_FILE  "./etc/exceptions.conf"
+#define IN_FILE     "../text.txt"
+#define OUT_FILE    "../result.txt"
+#define SEPAR_FILE  "../etc/separators.conf"
+#define EXCEP_FILE  "../etc/exceptions.conf"
 
 using namespace std;
 

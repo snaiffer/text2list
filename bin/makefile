@@ -1,7 +1,7 @@
 GCC_FLAGS=-std=c++11 $(FL)
 
 MAIN_NAME=text2list
-LIB_PATH=./lib
+LIB_PATH=../lib
 objects = $(LIB_PATH)/WordAggregator.o \
 		  $(LIB_PATH)/Exceptions.o
 
