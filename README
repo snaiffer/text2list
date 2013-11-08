@@ -1,0 +1,14 @@
+
+It is for helping in studying English. 
+The idea is: Before read any text we need to know words of the text.
+This program read the text and find words which you don't know with help of the file of exceptions.conf (it is in "etc" dir). In other words exceptions.conf is your dictionary (words which you know)
+
+Example:
+) INSERT text to ./text.txt
+) RUN the program:
+$ ./text2list
+) Open file ./result.txt and LEARN words which you don't know
+) ADD ./result.txt to ./etc/exceptions.conf
+$ cat ./result.txt >> ./etc/exceptions.conf
+) READ the text. 
+
