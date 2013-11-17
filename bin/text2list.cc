@@ -44,8 +44,10 @@ int main() {
         f_text >> aggregator;
         if ( aggregator.word_isBuilt() ) {
             string CurWord = aggregator.GetWord();
-            if ( !exceptions.find(CurWord) )
+            if ( !exceptions.find(CurWord) ) {
                 f_result << CurWord << endl;
+                exceptions.add(EXCEP_FILE, CurWord);
+            }
         }
     }
 

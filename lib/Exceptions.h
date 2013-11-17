@@ -17,6 +17,7 @@ class Exceptions {
 
     bool find(string &target);
 
+    void add(string FileName, string NewWord);
 };
 
 

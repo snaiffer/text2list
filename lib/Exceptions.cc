@@ -18,7 +18,6 @@ void Exceptions::ReadFromFile(string &FileName) {
         f_excep >> CurWord;
         dict.push_back(CurWord);
     }
-
 }
 
 bool Exceptions::find(string &target) {
@@ -28,4 +27,15 @@ bool Exceptions::find(string &target) {
         if ( *it == target )
             return true;
     return false;
+}
+
+void Exceptions::add(string FileName, string NewWord) {
+    ofstream f_excep(FileName.c_str(), ios::app);
+    if ( !f_excep ) {
+//        cerr << "Can't open exception file: " << f_excep << endl;
+        return;
+    }
+    f_excep << NewWord << endl;
+
+    dict.push_back(NewWord);
 }
