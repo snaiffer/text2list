@@ -8,7 +8,5 @@ Example:
 ) RUN the program:
 $ ./text2list
 ) Open file ./result.txt and LEARN words which you don't know
-) ADD ./result.txt to ./etc/exceptions.conf
-$ cat ./result.txt >> ./etc/exceptions.conf
 ) READ the text. 
 
